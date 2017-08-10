@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 
+console.log(process.env.PORT);
+
 app.get('/', function (req, res) {
   res.send('Hello World!')
 })
