@@ -4,6 +4,7 @@ const app = express()
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function (req, res) {
+  res.header("Access-Control-Allow-Origin", "*");
   setTimeout(()=>{res.send('Hello World!')}, 1000);
   
 })
